@@ -1,5 +1,5 @@
 //connect to the socket server
-const socket = io.connect("http://localhost:9000");
+const socket = io.connect("https://agarbacktrial.onrender.com");
 const init = async () => {
   const initData = await socket.emitWithAck("init", {
     playerName: player.name,
